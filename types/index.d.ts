@@ -1,0 +1,1 @@
+export declare function f12Forbidden(): void;

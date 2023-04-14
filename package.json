@@ -1,14 +1,43 @@
 {
   "name": "f12-forbidden",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Realzzz1874",
+  "license": "MIT",
+  "keywords": [
+    "f12",
+    "f12-forbidden",
+    "devtools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Realzzz1874/f12-forbidden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Realzzz1874/f12-forbidden/issues"
+  },
+  "homepage": "https://github.com/Realzzz1874/f12-forbidden",
+  "exports": {
+    ".": {
+      "import": "./dist/f12-forbidden.js",
+      "require": "./dist/f12-forbidden.umd.cjs"
+    }
+  },
   "type": "module",
+  "typings": "./types/index.d.ts",
+  "main": "./dist/f12-forbidden.umd.cjs",
+  "module": "./dist/f12-forbidden.js",
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^18.15.11",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
   }
